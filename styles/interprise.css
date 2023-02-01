@@ -1,0 +1,162 @@
+.projects {
+  max-width: 1400px;
+  margin: 70px auto;
+}
+
+.projectsImages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 20px;
+  margin-bottom: 50px;
+}
+
+.projectsImages > a {
+  cursor: pointer;
+}
+
+.image1 > img,
+.image2 > img,
+.image3 > img,
+.image4 > img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px black;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+  position: relative;
+}
+
+.image1::before,
+.image2::before,
+.image3::before,
+.image4::before {
+  content: "";
+  width: 100%;
+  height: 99.4%;
+  background-color: black;
+  position: absolute;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.image1:hover::before,
+.image2:hover::before,
+.image3:hover::before,
+.image4:hover::before {
+  opacity: 0.8;
+}
+
+.image1 > h2,
+.image2 > h2,
+.image3 > h2,
+.image4 > h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.85rem;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.image1:hover > h2,
+.image2:hover > h2,
+.image3:hover > h2,
+.image4:hover > h2 {
+  opacity: 1;
+}
+
+/* BORDER-BOTTOM */
+.image1 > .border1::before,
+.image2 > .border1::before,
+.image3 > .border1::before,
+.image4 > .border1::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 22%;
+  bottom: 43%;
+  background-color: var(--var-gold);
+  transition: all 0.3s ease-in-out;
+}
+
+.image1:hover > .border1::before,
+.image2:hover > .border1::before,
+.image3:hover > .border1::before,
+.image4:hover > .border1::before {
+  width: 56%;
+}
+
+/* BORDER-RIGHT */
+.image1 > .border2::before,
+.image2 > .border2::before,
+.image3 > .border2::before,
+.image4 > .border2::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 2px;
+  right: 22%;
+  bottom: 43%;
+  background-color: var(--var-gold);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.image1:hover > .border2::before,
+.image2:hover > .border2::before,
+.image3:hover > .border2::before,
+.image4:hover > .border2::before {
+  height: 15%;
+}
+
+/* BORDER-TOP */
+.image1 > .border3::before,
+.image2 > .border3::before,
+.image3 > .border3::before,
+.image4 > .border3::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 22%;
+  top: 42%;
+  background-color: var(--var-gold);
+  transition: all 0.3s ease-in-out;
+}
+
+.image1:hover > .border3::before,
+.image2:hover > .border3::before,
+.image3:hover > .border3::before,
+.image4:hover > .border3::before {
+  width: 56%;
+}
+
+/* BORDER-LEFT */
+.image1 > .border4::before,
+.image2 > .border4::before,
+.image3 > .border4::before,
+.image4 > .border4::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 2px;
+  left: 22%;
+  bottom: 43%;
+  background-color: var(--var-gold);
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.image1:hover > .border4::before,
+.image2:hover > .border4::before,
+.image3:hover > .border4::before,
+.image4:hover > .border4::before {
+  height: 15%;
+}

@@ -1,0 +1,25 @@
+/* about */
+.about,
+.local {
+  padding: 0px 16px;
+  margin-bottom: 64px;
+  max-width: 1200px;
+  margin: 0 auto 64px auto;
+}
+.about img {
+  max-width: 100%;
+  border-radius: 4px;
+
+  box-shadow: 0px 0px 2px black;
+}
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+.aboutText h2 {
+  margin-bottom: 32px;
+}

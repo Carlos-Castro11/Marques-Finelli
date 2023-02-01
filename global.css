@@ -1,0 +1,103 @@
+/* STYLES ===================================*/
+@import url(./styles/slide.css);
+@import url(./styles/header.css);
+@import url(./styles/about.css);
+@import url(./styles/ad.css);
+@import url(./styles/local.css);
+@import url(./styles/footer.css);
+@import url(./styles/interprise.css);
+@import url(./styles/interprise1.css);
+
+/* FONTS ===================================*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* COLORS =================================*/
+:root {
+  --var-blueP: #15acfc;
+  --var-blackT: #333333;
+  --var-blueD: #032030;
+  --var-gold: #e4cc25;
+  --var-white: #ffffff;
+  --var-gray: rgb(48, 45, 45);
+}
+
+/* RESET ===================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a,
+h1,
+h2,
+h3,
+ul,
+li p {
+  margin: 0;
+  padding: 0;
+}
+
+.blueP {
+  color: var(--var-blueP);
+}
+.bluePBackground {
+  background: var(--var-blueP);
+}
+.blackTBackground {
+  background: var(--var-blackT);
+}
+.blackT {
+  color: var(--var-blackT);
+}
+.blueD {
+  color: var(--var-blueD);
+}
+.blueDBackground {
+  background: var(--var-blueD);
+}
+.goldBackground {
+  background: var(--var-gold);
+}
+.grayBackground {
+  background: var(--var-gray);
+}
+.white {
+  color: var(--var-white);
+}
+.whiteBackground {
+  background: var(--var-white);
+}
+.normalTextT {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.normalTextP {
+  font-size: 1.25rem;
+}
+.sectionT {
+  font-weight: bold;
+  font-size: 3rem;
+  border-bottom: 4px solid var(--var-blueP);
+  width: max-content;
+  margin-bottom: 64px;
+}
+.buttonP {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.adTextT {
+  font-size: 3.75rem;
+}
+.navText {
+  font-size: 1rem;
+}
+.normalTextPBold {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
