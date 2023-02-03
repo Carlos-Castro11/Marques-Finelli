@@ -8,3 +8,14 @@ iframe {
 .local > p {
   margin-bottom: 8px;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .local > h1 {
+    font-size: 2rem;
+  }
+  .local > p {
+    font-size: 1.5rem;
+  }
+}

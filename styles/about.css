@@ -6,12 +6,20 @@
   max-width: 1200px;
   margin: 0 auto 64px auto;
 }
-.about img {
+.imageAbout img {
   max-width: 100%;
   border-radius: 4px;
-
   box-shadow: 0px 0px 2px black;
+  transform: translate3d(-50px, 0px, 0px);
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
 }
+
+.animate > img {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
 .aboutContainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -22,4 +30,38 @@
 }
 .aboutText h2 {
   margin-bottom: 32px;
+}
+
+.aboutText {
+  transform: translate3d(50px, 0px, 0px);
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+@media (max-width: 800px) {
+  .about > h1 {
+    font-size: 2rem;
+  }
+  .aboutText > h2 {
+    font-size: 1.7rem;
+  }
+
+  .aboutText h2 {
+    margin-bottom: 16px;
+  }
+  .aboutText > p {
+    font-size: 1.2rem;
+  }
+
+  .aboutContainer {
+    gap: 32px;
+  }
+
+  .about > .sectionT {
+    margin-bottom: 32px;
+  }
 }
