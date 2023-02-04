@@ -19,3 +19,12 @@ iframe {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 600px) {
+  .local > h1 {
+    font-size: 1.5rem;
+  }
+  .local > p {
+    font-size: 1.2rem;
+  }
+}
