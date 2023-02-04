@@ -130,7 +130,7 @@ li > a {
     width: 100%;
     flex-direction: column;
     gap: 35px;
-    top: 14%;
+    top: 11%;
     font-size: 1.7rem;
     text-align: left;
     background-color: var(--var-gray);

@@ -328,3 +328,16 @@
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 500px) {
+  .projects > h1 {
+    font-size: 1.8rem;
+  }
+
+  .image1 > h2,
+  .image2 > h2,
+  .image3 > h2,
+  .image4 > h2 {
+    font-size: 0.8rem;
+  }
+}
