@@ -29,6 +29,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 64px;
 }
+
 .enterpriseP1Text h2 {
   margin-bottom: 32px;
   white-space: nowrap;
@@ -59,7 +60,19 @@ ul {
   }
 
   .enterpriseP1Text > p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+  .enterpriseP1Container {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .enterpriseP1Text > p {
+    margin-bottom: 32px;
+  }
+  .enterpriseP1DetailText > p {
+    font-size: 1.4rem;
   }
 }
 
@@ -67,29 +80,29 @@ ul {
   .enterpriseP1Text h2 {
     font-size: 1.7rem;
   }
-
-  .enterpriseP1DetailText > p {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 850px) {
+  .enterpriseP1 {
+    padding: 0px;
+    margin: 20px;
+  }
   .enterpriseP1 > h1 {
     font-size: 1.5rem;
+    margin-bottom: 40px;
   }
   .enterpriseP1Container {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 64px;
-  }
-
-  .imgContainer ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 32px 16px;
   }
 
   .enterpriseP1DetailText > p {
     font-size: 1.3rem;
+  }
+  .enterpriseP1Text > p {
+    margin-bottom: 32px;
+  }
+
+  .enterpriseP1Text h2 {
+    margin-top: 0px;
   }
 }
