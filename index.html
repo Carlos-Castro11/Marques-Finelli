@@ -72,7 +72,7 @@
     <!-- AD -->
     <section class="ad bluePBackground">
       <div class="adContainer">
-        <div>
+        <div class="adText">
           <h1 class="adTextT">
             Garanta <br class="adBr" />a
             <strong> melhor construção</strong> com a
@@ -81,7 +81,9 @@
           </h1>
           <p class="normalTextP">Confira a localização abaixo</p>
         </div>
-        <img src="./assets/images/imgwall.jpg"></img>
+        <div>
+          <img  class="adImage" src="./assets/images/imgwall.jpg"></img>
+        </div>
       </div>
     </section>
 
@@ -89,6 +91,7 @@
     <section class="local">
       <h1 class="sectionT blackT localTitle">LOCALIZAÇÃO - ESCRITÓRIO</h1>
       <iframe
+        class="map"
         width="600"
         height="400"
         id="gmap_canvas"
@@ -98,10 +101,12 @@
         marginheight="0"
         marginwidth="0"
       ></iframe>
-      <p class="blackT normalTextT">
-        Rua Dr. Walter Ferreira Barreto - 315A - Ibituruna
-      </p>
-      <p class="blackT normalTextP">Montes Claros - MG</p>
+      <div class="localText">
+        <p class="blackT normalTextT">
+          Rua Dr. Walter Ferreira Barreto - 315A - Ibituruna
+        </p>
+        <p class="blackT normalTextP">Montes Claros - MG</p>
+      </div>
     </section>
 
     <!-- FOOTER -->

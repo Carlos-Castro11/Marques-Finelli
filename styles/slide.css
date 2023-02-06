@@ -87,3 +87,10 @@ body.paused {
     transform: initial;
   }
 }
+
+/* RESPONSIVE */
+@media (min-width: 1400px) {
+  #slide {
+    height: 90vh;
+  }
+}

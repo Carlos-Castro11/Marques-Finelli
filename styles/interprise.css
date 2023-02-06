@@ -3,6 +3,24 @@
   margin: 70px auto;
 }
 
+.col1,
+.col2 {
+  display: grid;
+  gap: 20px;
+}
+
+.col1 {
+  transform: translate3d(-30px, 0px, 0px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.col2 {
+  transform: translate3d(30px, 0px, 0px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
 .projectsImages {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -240,7 +258,7 @@
   .image2:hover > .border3::before,
   .image3:hover > .border3::before,
   .image4:hover > .border3::before {
-    width: 82%;
+    width: 83%;
   }
 
   /* BORDER-RIGHT */
@@ -285,7 +303,7 @@
   .image2:hover > .border1::before,
   .image3:hover > .border1::before,
   .image4:hover > .border1::before {
-    width: 82%;
+    width: 83%;
   }
 }
 

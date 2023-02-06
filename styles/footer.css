@@ -25,6 +25,9 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  transform: translate3d(0px, 30px, 0px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .logoFooter {
@@ -45,8 +48,11 @@
   padding: 5px 7px;
   font-size: 1.2rem;
   box-shadow: 0px 0px 1px black;
-
   align-items: center;
+}
+
+.contactItem > p {
+  color: black;
 }
 
 .secondFooter {
@@ -64,6 +70,15 @@
 
 .client {
   padding: 10px;
+  transform: translate3d(-30px, 0px, 0px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.devs {
+  transform: translate3d(30px, 0px, 0px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .devs > p > span {
@@ -137,7 +152,7 @@
   .secondFooter::before {
     content: "";
     position: absolute;
-    background: var(--var-gray);
+    background: linear-gradient(45deg, var(--var-gold), var(--var-gray));
     width: 2px;
     height: 100%;
     left: 50%;
