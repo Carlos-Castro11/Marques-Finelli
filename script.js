@@ -11,15 +11,6 @@ if (container && elements && controls && elements.children.length) {
   );
 }
 
-const imgOn = document.querySelector(".imgContainer img");
-const imgGallery = document.querySelectorAll(".imgContainer ul li img");
-imgGallery.forEach((e) => {
-  e.addEventListener("click", () => {
-    const src = e.getAttribute("src");
-    imgOn.setAttribute("src", src);
-  });
-});
-
 // MOBILE MENU
 const button_mobile = document.querySelector(".navMobile");
 const menu_mobile = document.querySelector(".navList");

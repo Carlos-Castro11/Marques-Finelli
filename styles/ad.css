@@ -1,6 +1,7 @@
 /* ad */
 .ad {
   margin-bottom: 64px;
+  overflow-x: hidden;
 }
 .ad h1 {
   font-weight: normal;

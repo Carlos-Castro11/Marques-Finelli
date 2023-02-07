@@ -1,3 +1,41 @@
+const windowHalf = window.innerHeight * 0.7;
+const aboutImg = document.querySelector(".imageAbout");
+const windowHalf2 = window.innerHeight * 0.8;
+
+// FOOTER SCROLL
+const footer = document.querySelector(".infos");
+const devs = document.querySelector(".devs");
+const client = document.querySelector(".client");
+
+function footerAnimation() {
+  const footerTop = footer.getBoundingClientRect().top;
+  const isfooterMapVisible = footerTop - windowHalf2 < 220;
+  const isfooterMapInvisible = footerTop - windowHalf2 > 220;
+  if (isfooterMapVisible) footer.classList.add("animate");
+  if (isfooterMapInvisible) footer.classList.remove("animate");
+}
+
+function devsAnimation() {
+  const devsTop = devs.getBoundingClientRect().top;
+  const isdevsVisible = devsTop - windowHalf2 < 220;
+  const isdevsInvisible = devsTop - windowHalf2 > 220;
+  if (isdevsVisible) devs.classList.add("animate");
+  if (isdevsInvisible) devs.classList.remove("animate");
+}
+
+function clientsAnimation() {
+  const clientTop = client.getBoundingClientRect().top;
+  const isclientVisible = clientTop - windowHalf2 < 220;
+  const isclientInvisible = clientTop - windowHalf2 > 220;
+  if (isclientVisible) client.classList.add("animate");
+  if (isclientInvisible) client.classList.remove("animate");
+}
+
+footerAnimation();
+window.addEventListener("scroll", devsAnimation);
+window.addEventListener("scroll", clientsAnimation);
+window.addEventListener("scroll", footerAnimation);
+
 // MOBILE MENU
 const button_mobile = document.querySelector(".navMobile");
 const menu_mobile = document.querySelector(".navList");
@@ -33,63 +71,11 @@ menu_items.forEach((item) => {
 button_mobile.addEventListener("click", showMenuMobile);
 page.addEventListener("click", removeMenuMobile);
 
-const windowHalf = window.innerHeight * 0.7;
-const windowHalf2 = window.innerHeight * 0.8;
-// INTERPRISE SCROLL
-const col1 = document.querySelector(".col1");
-const col2 = document.querySelector(".col2");
-
-function col1Animation() {
-  const col1Top = col1.getBoundingClientRect().top;
-  const iscol1Visible = col1Top - windowHalf2 < 220;
-  const iscol1Invisible = col1Top - windowHalf2 > 220;
-  if (iscol1Visible) col1.classList.add("animate");
-  if (iscol1Invisible) col1.classList.remove("animate");
-}
-
-function col2Animation() {
-  const col2Top = col2.getBoundingClientRect().top;
-  const iscol2Visible = col2Top - windowHalf2 < 220;
-  const iscol2Invisible = col2Top - windowHalf2 > 220;
-  if (iscol2Visible) col2.classList.add("animate");
-  if (iscol2Invisible) col2.classList.remove("animate");
-}
-
-col1Animation();
-window.addEventListener("scroll", col1Animation);
-col2Animation();
-window.addEventListener("scroll", col2Animation);
-
-// FOOTER SCROLL
-const footer = document.querySelector(".infos");
-const devs = document.querySelector(".devs");
-const client = document.querySelector(".client");
-
-function footerAnimation() {
-  const footerTop = footer.getBoundingClientRect().top;
-  const isfooterMapVisible = footerTop - windowHalf2 < 220;
-  const isfooterMapInvisible = footerTop - windowHalf2 > 220;
-  if (isfooterMapVisible) footer.classList.add("animate");
-  if (isfooterMapInvisible) footer.classList.remove("animate");
-}
-
-function devsAnimation() {
-  const devsTop = devs.getBoundingClientRect().top;
-  const isdevsVisible = devsTop - windowHalf2 < 220;
-  const isdevsInvisible = devsTop - windowHalf2 > 220;
-  if (isdevsVisible) devs.classList.add("animate");
-  if (isdevsInvisible) devs.classList.remove("animate");
-}
-
-function clientsAnimation() {
-  const clientTop = client.getBoundingClientRect().top;
-  const isclientVisible = clientTop - windowHalf2 < 220;
-  const isclientInvisible = clientTop - windowHalf2 > 220;
-  if (isclientVisible) client.classList.add("animate");
-  if (isclientInvisible) client.classList.remove("animate");
-}
-
-footerAnimation();
-window.addEventListener("scroll", devsAnimation);
-window.addEventListener("scroll", clientsAnimation);
-window.addEventListener("scroll", footerAnimation);
+const imgOn = document.querySelector(".imgContainer img");
+const imgGallery = document.querySelectorAll(".imgContainer ul li img");
+imgGallery.forEach((e) => {
+  e.addEventListener("click", () => {
+    const src = e.getAttribute("src");
+    imgOn.setAttribute("src", src);
+  });
+});
