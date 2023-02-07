@@ -1,6 +1,7 @@
 .footer {
   padding: 30px 30px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .footer::before {
@@ -147,6 +148,7 @@
   .secondFooter {
     font-size: 0.8rem;
     position: relative;
+    overflow-x: hidden;
   }
 
   .secondFooter::before {
