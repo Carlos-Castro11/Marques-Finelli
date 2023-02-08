@@ -100,12 +100,12 @@ export default class Slide {
   }
   addThumbItems() {
     const thumbContainer = document.createElement("div");
-    thumbContainer.id = "slide-thumb";
+    thumbContainer.id = "slideThumb";
     for (let i = 0; i < this.slides.length; i++) {
-      thumbContainer.innerHTML += `<span><span class="thumb-item"></span></span>`;
+      thumbContainer.innerHTML += `<span><span class="thumbItem"></span></span>`;
     }
     this.controls.appendChild(thumbContainer);
-    this.thumbItems = Array.from(document.querySelectorAll(".thumb-item"));
+    this.thumbItems = Array.from(document.querySelectorAll(".thumbItem"));
   }
   init() {
     this.addControls();

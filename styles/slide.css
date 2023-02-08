@@ -7,7 +7,7 @@ body.paused {
   touch-action: manipulation;
 }
 
-#slide-elements > img {
+#slideElements > img {
   display: block;
   max-width: 100%;
 }
@@ -20,45 +20,47 @@ body.paused {
   margin: 0px auto;
   margin-bottom: 30px;
   box-shadow: 0px 0px 3px black;
+  position: relative;
 }
 
-#slide-elements {
+#slideElements {
   display: grid;
   grid-area: 1/1;
 }
 
-#slide-elements > * {
+#slideElements > * {
   grid-area: 1/1;
   opacity: 0;
   visibility: none;
 }
 
-#slide-elements > .active {
+#slideElements > .active {
   opacity: 1;
   visibility: visible;
 }
 
-#slide-controls {
+#slideControls {
   grid-area: 1/1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
+  z-index: 9999;
 }
 
-#slide-controls button {
+#slideControls button {
   opacity: 0;
   appearance: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-#slide-thumb {
+#slideThumb {
   display: flex;
   position: absolute;
   width: 100%;
   pointer-events: none;
 }
 
-#slide-thumb > span {
+#slideThumb > span {
   flex: 1;
   display: block;
   height: 4px;
@@ -69,7 +71,7 @@ body.paused {
   isolation: isolate;
 }
 
-#slide-thumb .thumb-item.active {
+#slideThumb .thumbItem.active {
   display: block;
   height: inherit;
   background: rgba(255, 255, 255, 0.9);
@@ -78,10 +80,30 @@ body.paused {
   animation: thumb forwards linear running;
 }
 
-#slide-thumb .thumb-item.paused {
+#slideThumb .thumbItem.paused {
   animation-play-state: paused;
 }
 
+.leftArrow,
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  cursor: pointer;
+  background-color: var(--var-gray);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.leftArrow {
+  left: 10px;
+}
+
+.rightArrow {
+  right: 10px;
+}
+
+/* ANIMATION */
 @keyframes thumb {
   to {
     transform: initial;
@@ -92,5 +114,19 @@ body.paused {
 @media (min-width: 1400px) {
   #slide {
     height: 90vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .leftArrow,
+  .rightArrow {
+    width: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .leftArrow,
+  .rightArrow {
+    width: 40px;
   }
 }
