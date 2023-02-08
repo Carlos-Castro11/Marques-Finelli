@@ -74,3 +74,23 @@
     font-size: 3.5rem;
   }
 }
+
+@media (max-width: 600px) {
+  .adTextT {
+    font-size: 2rem;
+  }
+
+  .ad h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .adTextT {
+    font-size: 1.7rem;
+  }
+
+  .ad h1 {
+    font-size: 2.5rem;
+  }
+}
