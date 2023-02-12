@@ -5,6 +5,7 @@
   margin-bottom: 64px;
   max-width: 1200px;
   margin: 0 auto 64px auto;
+  overflow-x: hidden;
 }
 .imageAbout img {
   max-width: 100%;

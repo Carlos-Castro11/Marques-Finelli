@@ -16,7 +16,7 @@ body.paused {
   display: grid;
   border-radius: 4px;
   overflow: hidden;
-  max-width: 1700px;
+  max-width: 1300px;
   margin: 0px auto;
   margin-bottom: 30px;
   box-shadow: 0px 0px 3px black;
@@ -111,11 +111,6 @@ body.paused {
 }
 
 /* RESPONSIVE */
-@media (min-width: 1400px) {
-  #slide {
-    height: 90vh;
-  }
-}
 
 @media (max-width: 800px) {
   .leftArrow,

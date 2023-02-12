@@ -40,6 +40,7 @@
 .telephone > li,
 .mail > li {
   position: relative;
+  white-space: nowrap;
 }
 
 .whatsapp > li::before {

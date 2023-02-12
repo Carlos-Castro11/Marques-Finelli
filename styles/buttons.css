@@ -10,7 +10,7 @@
 }
 
 .wppButton > img:hover {
-  filter: drop-shadow(0 0 1px black);
+  filter: drop-shadow(0 0 2px black);
 }
 
 /* BACK TO TOP */

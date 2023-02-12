@@ -78,10 +78,11 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   opacity: 0;
   transition: all ease-in-out 0.5s;
   white-space: nowrap;
+  text-align: center;
 }
 
 .image1:hover > h2,
@@ -308,6 +309,7 @@
   }
 }
 
+/*RESPONSIVE*/
 @media (max-width: 800px) {
   .image1 > h2,
   .image2 > h2,
@@ -324,7 +326,7 @@
 
   .projects {
     max-width: 1400px;
-    margin: 50px 20px;
+    margin: 50px 20px 0px 20px;
   }
 
   .image1 > h2,
@@ -344,7 +346,7 @@
   .image2 > h2,
   .image3 > h2,
   .image4 > h2 {
-    font-size: 0.95rem;
+    font-size: 0.86rem;
   }
 }
 
@@ -358,5 +360,14 @@
   .image3 > h2,
   .image4 > h2 {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .image1 > h2,
+  .image2 > h2,
+  .image3 > h2,
+  .image4 > h2 {
+    font-size: 0.6rem;
   }
 }
