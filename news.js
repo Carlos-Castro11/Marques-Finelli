@@ -86,3 +86,4 @@ clientsAnimation();
 window.addEventListener("scroll", devsAnimation);
 window.addEventListener("scroll", clientsAnimation);
 window.addEventListener("scroll", footerAnimation);
+window.addEventListener("scroll", removeMenuMobile);

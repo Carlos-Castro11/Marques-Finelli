@@ -35,6 +35,7 @@ footerAnimation();
 window.addEventListener("scroll", devsAnimation);
 window.addEventListener("scroll", clientsAnimation);
 window.addEventListener("scroll", footerAnimation);
+window.addEventListener("scroll", removeMenuMobile);
 
 // MOBILE MENU
 const button_mobile = document.querySelector(".navMobile");
