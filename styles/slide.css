@@ -112,6 +112,13 @@ body.paused {
 
 /* RESPONSIVE */
 
+@media (max-width: 1400px) {
+  .leftArrow,
+  .rightArrow {
+    width: 70px;
+  }
+}
+
 @media (max-width: 800px) {
   .leftArrow,
   .rightArrow {

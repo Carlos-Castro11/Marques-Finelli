@@ -183,6 +183,13 @@ li > a {
     visibility: visible;
     transform: translate3d(0px, 0px, 0px);
   }
+  .logo {
+    padding: 10px;
+  }
+
+  .header {
+    padding: 25px 150px;
+  }
 }
 
 @media (max-width: 800px) {
