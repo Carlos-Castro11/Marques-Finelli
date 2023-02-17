@@ -143,10 +143,10 @@
 
 .contactItem {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   background-color: var(--var-gold);
   border-radius: 5px;
-  padding: 5px 7px;
+  padding: 5px 5px;
   font-size: 1.2rem;
   box-shadow: 0px 0px 1px black;
   align-items: center;
