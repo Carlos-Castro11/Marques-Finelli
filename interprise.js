@@ -72,6 +72,7 @@ menu_items.forEach((item) => {
 button_mobile.addEventListener("click", showMenuMobile);
 page.addEventListener("click", removeMenuMobile);
 
+// IMAGES
 const imgOn = document.querySelector(".imgContainer img");
 const imgGallery = document.querySelectorAll(".imgContainer ul li img");
 imgGallery.forEach((e) => {

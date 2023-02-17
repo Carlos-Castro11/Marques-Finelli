@@ -35,15 +35,15 @@
   padding: 0px 10px;
 }
 
-.whatsapp > li,
+/* .whatsapp > li,
 .instagram > li,
 .telephone > li,
 .mail > li {
   position: relative;
   white-space: nowrap;
-}
+} */
 
-.whatsapp > li::before {
+/* .whatsapp > li::before {
   background: linear-gradient(45deg, #00ff77, #053d00);
   position: absolute;
   content: "";
@@ -55,9 +55,9 @@
   border-radius: 5px;
   transition: all ease-in-out 0.3s;
   opacity: 0;
-}
+} */
 
-.instagram > li::before {
+/* .instagram > li::before {
   background: radial-gradient(
       circle farthest-corner at 35% 90%,
       #fec564,
@@ -129,7 +129,7 @@
 .telephone > li:hover::before,
 .mail > li:hover::before {
   opacity: 1;
-}
+} */
 
 .contactList {
   display: flex;
@@ -138,7 +138,7 @@
 }
 
 .contactItem:hover {
-  background-color: transparent;
+  background: #bba515;
 }
 
 .contactItem {
@@ -150,6 +150,7 @@
   font-size: 1.2rem;
   box-shadow: 0px 0px 1px black;
   align-items: center;
+  transition: 0.3s ease;
 }
 
 .contactItem > p,
