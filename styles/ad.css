@@ -8,6 +8,10 @@
   margin-bottom: 32px;
 }
 
+.break {
+  white-space: nowrap;
+}
+
 .adContainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -15,12 +19,14 @@
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 32px;
+  gap: 50px;
 }
 .adContainer img {
   max-width: 80%;
   border-radius: 4px;
   box-shadow: 0px 0px 2px black;
+  display: flex;
+  align-self: flex-end;
 }
 
 .adImage {
