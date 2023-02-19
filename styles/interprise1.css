@@ -94,6 +94,7 @@ ul {
   }
   .enterpriseP1Container {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .enterpriseP1DetailText > p {
@@ -103,7 +104,23 @@ ul {
     margin-bottom: 32px;
   }
 
-  .enterpriseP1Text h2 {
-    margin-top: 0px;
+  .enterpriseP1Text > p {
+    margin-bottom: 20px;
+  }
+
+  .enterpriseP1Text h3 {
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+
+  .enterpriseP1DetailText > p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .enterpriseP1 > h1 {
+    font-size: 1.375rem;
+    margin-bottom: 30px;
   }
 }

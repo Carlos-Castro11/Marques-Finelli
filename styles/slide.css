@@ -94,6 +94,10 @@ body.paused {
   border-radius: 50%;
   padding: 10px;
   width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
 }
 
 .leftArrow {
