@@ -5,9 +5,6 @@ iframe {
   border-radius: 4px;
   margin-bottom: 32px;
 }
-.local > p {
-  margin-bottom: 8px;
-}
 
 .localText {
   transform: translate3d(-30px, 0px, 0px);
@@ -28,6 +25,12 @@ iframe {
 }
 
 /* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .local > h1 {
+    margin-bottom: 50px;
+  }
+}
 
 @media (max-width: 800px) {
   .local > h1 {
