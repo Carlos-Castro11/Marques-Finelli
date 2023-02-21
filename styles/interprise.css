@@ -81,7 +81,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5rem;
+  font-size: 2.3rem;
   opacity: 0;
   transition: all ease-in-out 0.5s;
   white-space: nowrap;
@@ -95,49 +95,27 @@
   opacity: 1;
 }
 
-/* BORDER-BOTTOM */
-.image1 > .border1::before,
-.image2 > .border1::before,
-.image3 > .border1::before,
-.image4 > .border1::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0%;
-  left: 22%;
-  bottom: 43%;
-  background-color: var(--var-gold);
-  transition: all 0.3s ease-in-out;
-}
-
-.image1:hover > .border1::before,
-.image2:hover > .border1::before,
-.image3:hover > .border1::before,
-.image4:hover > .border1::before {
-  width: 56%;
-}
-
-/* BORDER-RIGHT */
-.image1 > .border2::before,
-.image2 > .border2::before,
-.image3 > .border2::before,
-.image4 > .border2::before {
+/* BORDER-LEFT */
+.image1 > .border4::before,
+.image2 > .border4::before,
+.image3 > .border4::before,
+.image4 > .border4::before {
   content: "";
   position: absolute;
   height: 0%;
   width: 2px;
-  right: 22%;
-  bottom: 43%;
+  left: 8%;
+  bottom: 33%;
   background-color: var(--var-gold);
   transition: all 0.3s ease-in-out;
   transition-delay: 0.3s;
 }
 
-.image1:hover > .border2::before,
-.image2:hover > .border2::before,
-.image3:hover > .border2::before,
-.image4:hover > .border2::before {
-  height: 15%;
+.image1:hover > .border4::before,
+.image2:hover > .border4::before,
+.image3:hover > .border4::before,
+.image4:hover > .border4::before {
+  height: 32%;
 }
 
 /* BORDER-TOP */
@@ -149,8 +127,8 @@
   position: absolute;
   height: 2px;
   width: 0%;
-  left: 22%;
-  top: 42%;
+  left: 8%;
+  top: 35%;
   background-color: var(--var-gold);
   transition: all 0.3s ease-in-out;
 }
@@ -159,30 +137,52 @@
 .image2:hover > .border3::before,
 .image3:hover > .border3::before,
 .image4:hover > .border3::before {
-  width: 56%;
+  width: 84%;
 }
 
-/* BORDER-LEFT */
-.image1 > .border4::before,
-.image2 > .border4::before,
-.image3 > .border4::before,
-.image4 > .border4::before {
+/* BORDER-RIGHT */
+.image1 > .border2::before,
+.image2 > .border2::before,
+.image3 > .border2::before,
+.image4 > .border2::before {
   content: "";
   position: absolute;
   height: 0%;
   width: 2px;
-  left: 22%;
-  bottom: 43%;
+  right: 8%;
+  bottom: 33%;
   background-color: var(--var-gold);
   transition: all 0.3s ease-in-out;
   transition-delay: 0.3s;
 }
 
-.image1:hover > .border4::before,
-.image2:hover > .border4::before,
-.image3:hover > .border4::before,
-.image4:hover > .border4::before {
-  height: 15%;
+.image1:hover > .border2::before,
+.image2:hover > .border2::before,
+.image3:hover > .border2::before,
+.image4:hover > .border2::before {
+  height: 32%;
+}
+
+/* BORDER-BOTTOM */
+.image1 > .border1::before,
+.image2 > .border1::before,
+.image3 > .border1::before,
+.image4 > .border1::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  left: 8%;
+  bottom: 33%;
+  background-color: var(--var-gold);
+  transition: all 0.3s ease-in-out;
+}
+
+.image1:hover > .border1::before,
+.image2:hover > .border1::before,
+.image3:hover > .border1::before,
+.image4:hover > .border1::before {
+  width: 84%;
 }
 
 /* RESPONSIVE */
@@ -200,7 +200,7 @@
   .image2 > h2,
   .image3 > h2,
   .image4 > h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 }
 
@@ -209,7 +209,7 @@
   .image2 > h2,
   .image3 > h2,
   .image4 > h2 {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -218,7 +218,7 @@
   .image2 > h2,
   .image3 > h2,
   .image4 > h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   /* BORDER-LEFT */
@@ -342,6 +342,13 @@
 
   .projectsImages {
     margin-bottom: 10px;
+  }
+
+  .image1 > h2,
+  .image2 > h2,
+  .image3 > h2,
+  .image4 > h2 {
+    font-size: 1.1rem;
   }
 }
 
