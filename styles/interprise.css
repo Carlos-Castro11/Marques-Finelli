@@ -187,18 +187,18 @@
 @media (max-width: 1450px) {
   .projects {
     max-width: 1400px;
-    margin: 40px 20px 40px 20px;
+    margin: 40px 50px 30px 50px;
   }
 
   .projects > h1 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .image1 > h2,
   .image2 > h2,
   .image3 > h2,
   .image4 > h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -371,7 +371,7 @@
   .image2::before,
   .image3::before,
   .image4::before {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 1;
   }
 
@@ -421,5 +421,9 @@
   .image3 > h2,
   .image4 > h2 {
     font-size: 0.6rem;
+  }
+
+  .projects {
+    margin: 20px 15px 20px 15px;
   }
 }
