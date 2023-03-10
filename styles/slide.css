@@ -16,7 +16,7 @@ body.paused {
   display: grid;
   border-radius: 4px;
   overflow: hidden;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0px auto;
   margin-bottom: 30px;
   box-shadow: 0px 0px 3px black;
@@ -126,7 +126,7 @@ body.paused {
     display: grid;
     border-radius: 4px;
     overflow: hidden;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0px auto;
     margin-bottom: 30px;
     box-shadow: 0px 0px 3px black;

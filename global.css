@@ -11,6 +11,7 @@
 
 /* FONTS ===================================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* COLORS =================================*/
 :root {
@@ -20,6 +21,7 @@
   --var-gold: #e4cc25;
   --var-white: #ffffff;
   --var-gray: rgb(48, 45, 45);
+  --type-second: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 /* RESET ===================================*/
